@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <h1><center><u><b>Dynamic Resume by MASHHOOD</b></u></center></h1>
+    </header>
+    <main>
+        <form id="resume-form">
+            <section>
+                <fieldset id="Personal_Info">
+                    <legend><h3>Basic Information</h3></legend>
+                    <label>Name</label>
+                    <input type="text" id="name" required><br>
+                    <label>Email</label>
+                    <input type="email" id="email" required><br>
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" required><br><br>
+                    <label>Additional Remarks/Information</label>
+                    <textarea id="remarks" rows="4" required></textarea>
+                </fieldset>
+            </section>
+
+            <section>
+                <fieldset id="Education">
+                    <legend><h3>Education</h3></legend>
+                    <label>Degree</label>
+                    <input type="text" id="degree" required><br>
+                    <label>Institution</label>
+                    <input type="text" id="institution" required><br>
+                    <label>Duration</label>
+                    <input type="text" id="education-duration" required><br> 
+                    <br>
+                    <label>Additional Qualifications</label>
+                    <textarea id="additional-qualifications" rows="4" required></textarea>
+                </fieldset>   
+            </section>
+
+            <section>
+                <fieldset id="Work_Experience">
+                    <legend><h3>Work Experience</h3></legend>
+                    <label>Company Name</label>
+                    <input type="text" id="company" required><br>
+                    <label>Position</label>
+                    <input type="text" id="position" required><br>
+                    <label>Duration</label>
+                    <input type="text" id="work-duration" required><br><br>
+                    <label>Additional Info</label>
+                    <textarea id="work-addition" rows="4" required></textarea>
+                </fieldset>
+            </section>
+            <br><br>
+            <center><button type="submit">Submit</button></center>
+            <br><br>
+        </form>
+        <section id="Resume_preview">
+            <h2>Resume Preview</h2>
+            <p><strong>Name:</strong> <span id="display-name"></span></p>
+            <p><strong>Email:</strong> <span id="display-email"></span></p>
+            <p><strong>Phone:</strong> <span id="display-phone"></span></p>
+            <p><strong>Additional Remarks:</strong> <span id="display-remarks"></span></p>
+
+            <h3>Education</h3>
+            <p><strong>Degree:</strong> <span id="display-degree"></span></p>
+            <p><strong>Institution:</strong> <span id="display-institution"></span></p>
+            <p><strong>Duration:</strong> <span id="display-education-duration"></span></p>
+            <p><strong>Additional Qualifications:</strong> <span id="display-additional-qualifications"></span></p>
+
+            <h3>Work Experience</h3>
+            <p><strong>Company Name:</strong> <span id="display-company"></span></p>
+            <p><strong>Position:</strong> <span id="display-position"></span></p>
+            <p><strong>Duration:</strong> <span id="display-work-duration"></span></p>
+            <p><strong>Additional Info:</strong> <span id="display-work-addition"></span></p>
+        </section>
+
+        <center>
+    <button type="button" onclick="downloadResumeAsPDF()">Download Resume as PDF</button>
+</center>
+
+    </main>
+
+    <hr>
+    <footer>
+        <p><center>Contact me at: <a href="mailto:mashhood.y4@gmail.com">mashhood.y4@gmail.com</a></center></p>
+        <p><center>Thank you for visiting</center></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
